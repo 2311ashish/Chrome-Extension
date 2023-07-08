@@ -1,0 +1,32 @@
+{
+    "manifest_version" : 3,
+    "name": "My Extension",
+    "version": "1.0",
+    "description": "Description of my extension",
+   
+
+    "action": {
+      "default_icon":"rupee.png",
+      
+      "default_popup": "chrome.html"
+      
+    },
+
+
+    "permissions": [
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+    ],
+
+
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["chrome.js"]
+      }
+    ]
+
+  }
+
+  
